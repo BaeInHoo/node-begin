@@ -32,8 +32,8 @@ const process = {
       success: false,
       msg: "login fail",
     });
-  }
-}
+  },
+};
 
 module.exports = {
   output,

@@ -28,6 +28,6 @@ function login() {
       }
     })
     .catch((err) => {
-      console.error("ERROR!!");
+      console.error("login ERROR!!");
     });
 }

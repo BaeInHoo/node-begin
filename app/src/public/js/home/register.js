@@ -13,7 +13,7 @@ function register() {
     return alert("input your ID");
   }
 
-  if (psword !== confirmPsword) {
+  if (psword.value !== confirmPsword.value) {
     return alert("Not correct password!");
   }
 

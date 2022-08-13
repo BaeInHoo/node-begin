@@ -4,7 +4,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv");
-const morgan = require("morgan");
 
 const app = express();
 
@@ -19,7 +18,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(`${__dirname}/src/public`));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan("dev", { stream: accessLogStream }));
 
 app.use("/", home); // use -> middleware
 
